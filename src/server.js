@@ -26,6 +26,7 @@ async function handler(request, response){
       return responseJSON(response, {success: true})
     },
     DELETE: async () => {
+      Database.clear()
       return responseJSON(response, {success: true})
     }
   }

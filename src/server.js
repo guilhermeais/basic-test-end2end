@@ -1,7 +1,7 @@
 import {  createServer  } from 'http'
 import { once } from 'events'
 import { randomUUID } from 'crypto'
-const Database = new Map()
+
 
 function responseJSON(response, data){
   response.writeHead(200, {'Content-Type': 'application/json'})
@@ -9,6 +9,7 @@ function responseJSON(response, data){
 }
 
 async function handler(request, response){
+  const Database = new Map()
   const {method} = request
   const methods = {
     GET: async () => {
@@ -33,5 +34,6 @@ async function handler(request, response){
 
   return methods[method]()
 }
+const server = createServer(handler)
 
-export default createServer(handler)
+export default server 

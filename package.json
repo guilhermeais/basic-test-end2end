@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "npx nodemon src/index.js",
-    "test": "jest"
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest --watchAll"
   },
   "keywords": [],
   "author": "",

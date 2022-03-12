@@ -1,0 +1,13 @@
+{
+  "name": "testesendtoend",
+  "version": "1.0.0",
+  "description": "Geralmente há uma certa dúvida ao entendermos a diferença de testes *** unitários, integração e end2end  ***, e isso depende um pouco do contexto.... <br/>",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
